@@ -1,0 +1,42 @@
+
+@use 'variables';
+
+
+.principal {
+    @include variables.flex(space-between);
+    height: 10vw;
+    background-color: antiquewhite;
+    padding: 0  5vw;
+    position: relative;
+
+    .title{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .links a{
+        margin-right: 3vw;
+        text-decoration: none;
+    }
+}
+.container{
+
+    #ocultar{
+        height: 17vw;
+        width: 12vw;
+        background-color: antiquewhite;
+        border: 0.1vw solid black;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        transition: all 0.5s ease;
+        display: none;
+        
+        .info{
+            @include variables.flex(center);
+           
+        }
+    }
+    #equis{
+        font-size: 3vw;
+        font-weight: bold;
+    }
+}
