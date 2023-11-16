@@ -50,7 +50,6 @@ function modoClaro() {
             });
             cambio_gafas.addEventListener("mouseout", () => {
                 cambio_gafas.src = "/images/jovenPrincipal-gafas.png";
-
             });
             count = 0;
         }
