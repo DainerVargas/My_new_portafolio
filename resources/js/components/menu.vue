@@ -6,7 +6,7 @@
         </div>
         <div id="ocultar">
             <div class="info">
-                <h2>Ocultar</h2>
+                <h2> Menu </h2>
             </div>
         </div>
     </div>
@@ -21,10 +21,10 @@ let count = 0;
         let ocultar = document.getElementById("ocultar");
         if(count == 1){
             equis.innerHTML = "&#215";
-            ocultar.style.display = "block";
+            ocultar.style.marginRight = "13vw";
         }else{
             equis.innerHTML = "&#8801";
-            ocultar.style.display = "none";
+            ocultar.style.marginRight = "-1vw";
             count = 0;
         }
 
