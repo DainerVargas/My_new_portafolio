@@ -7,7 +7,7 @@
 <style >
 .texto {
   font-size: 20px;
-  background:linear-gradient(#cc4141 ,#3d1010 );
+  background:linear-gradient(#cc4141 ,#2b0d0d );
 }
 </style>
 

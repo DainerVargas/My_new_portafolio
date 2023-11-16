@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Usando vue y sass</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 <body id="body">
     @vite('resources/sass/app.scss')
@@ -21,15 +22,15 @@
             <img id="modoclaro" class="modo__img" src="/images/soleado.png" alt="">
         </div>
         <div class="idioma">
-            
+
         </div>
     </header>
-    
+
     <div id="app">
         <mi-componente />
     </div>
 </div>
-    
+
 @vite('resources/js/app.js')
 @vite('resources/js/main.js')
 </body>
