@@ -19,16 +19,20 @@
         </nav>
         <div class="modo">
             <img id="modoclaro" class="modo__img" src="/images/soleado.png" alt="">
+            <img id="volumen" class="modo__img" src="/images/bajar-volumen-brown.png" alt="">
+            
+            <img id="volumen-white" class="modo__img" src="/images/bajar-volumen.png" alt="">
         </div>
-        <div class="idioma">
 
-        </div>
     </header>
 
     <div id="app">
         <mi-componente />
     </div>
+
+    <audio id="audio" src="/music/AudioPagina.mpeg"></audio>
 </div>
+
 
 @vite('resources/js/app.js')
 @vite('resources/js/main.js')

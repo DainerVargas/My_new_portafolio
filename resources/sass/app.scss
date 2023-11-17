@@ -18,6 +18,16 @@
         font-weight: bold;
         text-decoration: none;
         font-size: 1.5vw;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    }
+    #volumen-white{
+        display: none;
+    }
+    .modo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 5vw;
     }
 }
 
@@ -25,6 +35,7 @@
     overflow: hidden;
 }
 body{
+    background-color: #753a3a;
     background-color: #ffffff;
     transition: all 0.7s ease;
 }
@@ -60,10 +71,10 @@ body{
     &__parrafo{
         width: 50vw;
         font-size: 1.7vw;
-        /* color: rgb(73, 27, 27); */
+        color: #4a1b1b;
         color: white;
         font-weight: 600;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
         text-align: justify;
     }
 }
