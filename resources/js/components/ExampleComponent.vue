@@ -2,6 +2,9 @@
   <div class="texto">
     <img id="cambio_gafas" class="texto__imagen" src="/images/jovenPrincipal-gafas.png" alt="" />
     <p class="texto__parrafo">{{ texto }}</p>
+    <a href="/document/Dainer Vargas - Perfil Profesional.pdf" download="Dainer Vargas - Perfil Profesional.pdf">
+      <button id="boton" class="texto__download">Download my document</button>
+    </a>
   </div>
 </template>
 <style >
@@ -15,4 +18,5 @@
 <script setup>
 const texto =
   "¡Hola a todos! soy Dainer Manuel Vargas Jaraba, un amante del diseño web. He tenido logros notables, como ser Campeón Regional de La Guajira y representar a mi región en Cúcuta. Cada día sigo persiguiendo la excelencia en el diseño web, explorando nuevas tendencias y técnicas para brindar soluciones únicas y atractivas a mis clientes y audiencia.";
+
 </script>
