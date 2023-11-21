@@ -57,15 +57,15 @@
                 <div class="contacto">
                     <div class="linkedin contacto__red">
                         <img src="/images/linkedin.png" alt="">
-                        <a href="https://www.linkedin.com/in/dainerws/">DainerWs</a>
+                        <a href="https://www.linkedin.com/in/dainerws/" target="_blank">DainerWs</a>
                     </div>
                     <div class="github contacto__red">
                         <img src="/images/github-white.png" alt="">
-                        <a href="https://github.com/DainerVargas">DainerVargas</a>
+                        <a href="https://github.com/DainerVargas" target="_blank">DainerVargas</a>
                     </div>
-                    <div class="instagram contacto__red">
-                        <img src="/images/instagram.png" alt="">
-                        <a href="https://instagram.com/dainer_varggas">dainer_varggas</a>
+                    <div class="whatsApp contacto__red">
+                        <img src="/images/Whatsapp.png" alt="">
+                        <a href="https://wa.me/3242406307" target="_blank">Contáctame</a>
                     </div>
                 </div>
 

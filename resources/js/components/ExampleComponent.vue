@@ -3,7 +3,7 @@
     <img id="cambio_gafas" class="texto__imagen" src="/images/jovenPrincipal-gafas.png" alt="" />
     <p class="texto__parrafo">{{ texto }}</p>
     <a href="/document/Dainer Vargas - Perfil Profesional.pdf" download="Dainer Vargas - Perfil Profesional.pdf">
-      <button id="boton" class="texto__download">Download my document</button>
+      <button id="boton" class="texto__download">Descarga mi documento</button>
     </a>
   </div>
 </template>
