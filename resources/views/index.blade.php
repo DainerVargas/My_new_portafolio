@@ -11,8 +11,11 @@
     @vite('resources/sass/app.scss')
 <div id="hidden">
     <header class="principal">
-       <a href="DainerWs"><img id="logo" class="principal__imagen" src="/images/logo-brown.png" alt=""></a>
+       <a href="DainerWs"><img id="logo" class="principal__imagen" src="/images/logo-blue.png" alt=""></a>
         <nav class="links" >
+            <div class="divierte">
+                <strong id="diviertete">Home</strong>
+            </div>
             <div class="sobre">
                 <strong id="sobre_mi">Sobre mi</strong>
             </div>
@@ -22,12 +25,9 @@
             <div class="proyec">
                 <strong id="proyectos">Proyectos</strong>
             </div>
-            <div class="divierte">
-                <strong id="diviertete">Diviertete</strong>
-            </div>
         </nav>
-        <div class="modo">
 
+        <div class="modo">
             <div class="conte_modo">
                 <img id="modoclaro" class="modo__img" src="/images/soleado.png" alt="">
             </div>
@@ -68,10 +68,8 @@
                         <a href="https://wa.me/3242406307" target="_blank">Contáctame</a>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </header>
 
     <div id="app">
@@ -81,7 +79,7 @@
     <audio id="audio" src="/music/AudioPagina.mpeg"></audio>
     <div id="habilidades_all">
         <div id="conte_herramientas">
-            <div class="title_Habilidades">
+            <div class="title_Habilidades" id="title_Habilidades">
                 <h2 id="color">MIS HABILIDADES</h2>
             </div>
             <div class="grid">
@@ -154,6 +152,22 @@
                         <img id="xd" src="/images/xdAvance.png" alt="Image">
                         <div class="textoOcultar">
                             <p id="color">Adobe Xd es una aplicación móvil, donde puedes editar vídeos y fotos. Adobe XD apoya al diseño vectorial y a los sitios web wireframe, creando prototipos simples e interactivos con un solo clic.​</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="rotate" class="text-container">
+                        <img id="sass" src="/images/sass.svg" alt="sass-logo">
+                        <div class="textoOcultar">
+                            <p id="color">Sass es un lenguaje de hojas de estilo compilado en CSS. Sass ayuda a mantener bien organizadas las hojas de estilo grandes y facilita compartir diseños dentro y entre proyectos.​</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="rotate" class="text-container">
+                        <img id="vue" src="/images/vue.png" alt="vue-logo">
+                        <div class="textoOcultar">
+                            <p id="color">Vue.js es un framework de JavaScript de código abierto para la construcción de interfaces de usuario y aplicaciones de una sola página.​</p>
                         </div>
                     </div>
                 </div>
