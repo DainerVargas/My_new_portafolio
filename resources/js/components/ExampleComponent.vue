@@ -21,7 +21,7 @@
 
       <div class="logro1">
         <img class="medalla" src="/images/insignia.png" alt="medalla">
-        <p>Fui campeon regional de la Guajira</p>
+        <p>Fui campeón regional de la Guajira</p>
       </div>
 
       <div class="logro2">
@@ -40,8 +40,9 @@
     >
       <button id="boton" class="texto__download">Descarga mi CV</button>
     </a>
-    <div class="absolute"></div>
+    <div id="absolute"></div>
     <div class="absolute2"></div>
+    <div class="absolute3"></div>
   </div>
 </template>
 
@@ -76,9 +77,8 @@ const texto = "¡Hola!, Soy Dainer Vargas J.";
   position: absolute;
   right: 0;
   width: 100%;
-  animation: write 4s infinite steps(18) alternate;
+  animation: write 3s infinite steps(18) alternate;
   background-color: white;
-  /* background-color: #000e35; */
 }
 @keyframes write {
   from {
@@ -127,7 +127,7 @@ const texto = "¡Hola!, Soy Dainer Vargas J.";
 .absolute{
   height: 7vw;
   width: 11vw;
-  background-color: #6883dc;
+  background: linear-gradient(#b1c3ee ,  #6f91e8);
   /* background-color: #001043; */
   border-radius:50%;
   border: none;
@@ -147,6 +147,18 @@ const texto = "¡Hola!, Soy Dainer Vargas J.";
   top: 18vw;
   right: -8vw;
   z-index: 1;
+}
+.absolute3{
+  height: 26vw;
+  width: 37vw;
+  background: linear-gradient(#b1c3ee ,  #6f91e8);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  border: none;
+  position: absolute;
+  top: 4vw;
+  left: -30vw;
+  z-index: 0;
+  transition: all 1s ease;
 }
 
 </style>

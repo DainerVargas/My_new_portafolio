@@ -27,23 +27,14 @@
             </div>
         </nav>
 
-        <div class="modo">
-            <div class="conte_modo">
-                <img id="modoclaro" class="modo__img" src="/images/soleado.png" alt="">
-            </div>
-                
-            <div class="modo__volumen">
-                <span id="volumen" class="material-symbols-outlined" >volume_off</span>
-            </div>
-            
-        </div>
         <div class="menu">
+            <img id="modoclaro" class="modo__img" src="/images/soleado.png" alt="">
             <span id="menu" class="material-symbols-outlined">sort</span>
         </div>
         <div id="ocultar">
             <div class="info_menu">
                 <div class="logo_menu">
-                    <img id="logomenu" class="principal__imagen" src="/images/logo-brownmodo.png" alt="">
+                    <img id="logomenu" class="principal__imagen" src="/images/logo-blue.png" alt="">
                 </div>
 
                 <div class="idioma">
@@ -53,7 +44,8 @@
                         <img id="eeuu" src="/images/estados-unidos.png" alt="">
                     </div>
                 </div>
-
+                <div class="absolutemenu"></div>
+                <div class="absolutemenu2"></div>
                 <div class="contacto">
                     <div class="linkedin contacto__red">
                         <img src="/images/linkedin.png" alt="">
@@ -105,7 +97,7 @@
                 </div>
                 <div class="card">
                     <div id="rotate" class="text-container">
-                        <img id="laravel" src="/images/laravelAvance.png" alt="Image">
+                        <img id="laravel" src="/images/laravelAvance2.png" alt="Image">
                         <div class="textoOcultar">
                             <p id="color">Laravel es un framework de código abierto para desarrollar aplicaciones y servicios web
                                 con PHP 5, PHP 7 y PHP 8. Su filosofía es desarrollar código PHP de forma elegante y
@@ -115,7 +107,7 @@
                 </div>
                 <div class="card">
                     <div id="rotate" class="text-container">
-                        <img id="mysql" src="/images/mysqlAvance.png" alt="Image">
+                        <img id="mysql" src="/images/mysqlAvance3.png" alt="Image">
                         <div class="textoOcultar">
                             <p id="color">
                                 MySQL es un sistema de gestión de bases de datos relacionales (RDBMS) de código abierto
@@ -125,7 +117,7 @@
                 </div>
                 <div class="card">
                     <div id="rotate" class="text-container">
-                        <img id="html" src="/images/htmlAvance.png" alt="Image">
+                        <img id="html" src="/images/htmlAvance2.png" alt="Image">
                         <div class="textoOcultar">
                             <p id="color">HTML, siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web.</p>
                         </div>
@@ -133,7 +125,7 @@
                 </div>
                 <div class="card">
                     <div id="rotate" class="text-container">
-                        <img id="css" src="/images/cssAvance.png" alt="Image">
+                        <img id="css" src="/images/cssAvance2.png" alt="Image">
                         <div class="textoOcultar">
                             <p id="color">CSS es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado</p>
                         </div>
