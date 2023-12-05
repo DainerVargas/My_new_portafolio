@@ -240,7 +240,155 @@ body {
     }
 }
 
-/* CARDS */
+/* ABOUT ME */
+
+.aboutMe{
+    @include funciones.align(space-between, center);
+    flex-direction: column;
+    margin-top: 4vw;
+    height: 46.8vw;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+
+    .foto{
+        height: 24vw;
+        width: 24vw;
+        border: 0.7vw solid #000e41;
+        border-radius: 50%;
+        @include funciones.align(center, end);
+        z-index: 10;
+        overflow: hidden;
+
+        &__img{
+            height: 23vw;
+            width: 17vw;
+            margin-bottom: -0.4vw;
+            z-index: 1;
+        }
+    }
+    .textoAbout{
+        width: 60%;
+        height: 14vw;
+        margin-bottom: 2vw;
+        border: 0.1vw solid #000e41;
+        padding: 0vw 0.5vw;
+        box-sizing: border-box;
+        border-radius: 0.4vw;
+        z-index: 99;
+    }
+    .textoAbout p{
+        text-align: justify;
+        font-size: 1.7vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    }
+    #absoluteAbout{
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        position: absolute;
+        height: 24vw;
+        width: 24vw;
+        top: -8vw;
+        left: 1vw;
+        background: linear-gradient(#b1c3ee ,  #6f91e8);
+        transform: rotate(65deg);
+    }
+    .triangle{
+        position: absolute;
+        height: 72vw;
+        width: 100vw;
+        top: 4vw;
+        left:8vw;
+        transform: translateZ(50%);
+        margin-bottom: 14vw;
+    }
+    .absoluteAbout2{
+        position: absolute;
+        height: 15vw;
+        width: 15vw;
+        top: 4vw;
+        left: 15vw;
+        transform: translate(-50%,-50%);
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        position: relative;
+        background: linear-gradient(#b1c3ee ,  #6f91e8);
+        transform: perspective(500px) translateZ(-200px);
+    }
+    .absoluteAbout3{
+        position: absolute;
+        height: 10vw;
+        width: 10vw;
+        top: 16vw;
+        left: 4vw;
+        transform: translate(-50%,-50%);
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        position: relative;
+        background: linear-gradient(#b1c3ee ,  #273b6d);
+    }
+   /*  .absoluteAbout4{
+        position: absolute;
+        height: 28vw;
+        width: 28vw;
+        top: -1vw;
+        left: 71vw;
+        transform: rotate(70deg);
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        position: relative;
+        background: linear-gradient(#b1c3ee ,  #6f91e8);
+        z-index: 0;
+    } */
+    .nuts{
+        position: absolute;
+        top: 11vw;
+        right: 4vw;
+        height: 20vw;
+        width: 20vw;
+    }
+    .nuts div{
+        position: absolute;
+        height: 5vw;
+        width: 5vw;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        background: linear-gradient(#b1c3ee ,  #6f91e8);
+        @include funciones.flex(center);
+        user-select: none;
+        transform: translate(-50%,-50%);
+
+    }
+    .mando{
+        color: #000e41;
+        background-color: transparent;
+        font-size: 4vw;
+        font-weight: bold;
+        margin-top: 0.5vw;
+    }
+    .nut2{
+        top: 23%;
+        left: 49%;
+        cursor: pointer;
+    }
+    .nut2:hover{
+        opacity: 0.7;
+    }
+    .nut1{
+        top: 40%;
+        left: 30%;
+    }
+    .nut3{
+        top: 57%;
+        left: 49%;
+        cursor: pointer;
+    }
+    .nut3:hover{
+        opacity: 0.7;
+    }
+    .nut4{
+        top: 40%;
+        left: 68%;
+    }
+    
+}
+
+/* CARDS HABILIDADES */
 .grid {
     display: grid;
     grid-template-columns: repeat(5, 16vw);

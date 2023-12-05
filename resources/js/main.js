@@ -42,27 +42,29 @@ function modoClaro() {
     const component = document.getElementById("component");
     const flecha = document.getElementById("flecha");
     const rotate = document.querySelectorAll("#rotate");
+    const borderText = document.querySelector(".textoAbout");
+    const borderFoto = document.querySelector(".borderFoto");
     let modo = 0;
     let num = 0;
 
-    
-    window.addEventListener("DOMContentLoaded",()=>{
+
+    window.addEventListener("DOMContentLoaded", () => {
         mododark();
     });
-    
 
-    modoclaro.addEventListener("click",()=>{
+
+    modoclaro.addEventListener("click", () => {
         modo++;
         if (modo == 1) {
             localStorage.setItem("cambio", modo);
-        } else{
+        } else {
             localStorage.setItem("cambio", modo);
             modo = 0;
         }
         mododark();
     });
 
-    function mododark(){
+    function mododark() {
         const newestado = localStorage.getItem("cambio");
         if (newestado == 1) {
             ocultar.style.background = "linear-gradient(#012c98, #010924)";
@@ -75,6 +77,8 @@ function modoClaro() {
             space3.style.background = "linear-gradient(#000e33,#000e36)";
             component.style.background = "linear-gradient(#010926,#001a5b)";
             conte_herramientas.style.background = "linear-gradient(#001a5b,#010926)";
+            borderText.style.border = "0.1vw solid white";
+            borderFoto.style.border = "0.7vw solid gray";
             links.forEach(element => {
                 element.style.color = "white";
             });
@@ -94,7 +98,7 @@ function modoClaro() {
                 cambio_gafas.src = "/images/jovenPrincipal-gafas.png";
             });
             cambio_gafas.addEventListener("mouseout", () => {
-                
+
                 cambio_gafas.src = "/images/jovenPrincipal.png";
             });
             titleHabilidad.style.color = "white";
@@ -102,7 +106,7 @@ function modoClaro() {
             Mynombre.style.color = "white";
             flecha.style.color = "white";
             title_idioma.style.color = "white";
-            
+
         } else {
             conte_herramientas.style.background = "linear-gradient(#fff,#fff)";
             title_idioma.style.color = "#010926";
@@ -131,7 +135,7 @@ function modoClaro() {
                 eleme.style.color = "#010926";
             });
             cambio_gafas.addEventListener("mouseover", () => {
-                
+
                 cambio_gafas.src = "/images/jovenPrincipal.png";
             });
             cambio_gafas.addEventListener("mouseout", () => {
@@ -140,6 +144,8 @@ function modoClaro() {
             titleHabilidad.style.color = "#010926";
             menu.style.color = "#010926";
             flecha.style.color = "#010926";
+            borderText.style.border = "0.1vw solid #010926";
+            borderFoto.style.border = " 0.7vw solid #000e41";
         }
     }
     menu.addEventListener("click", () => {
@@ -181,11 +187,27 @@ function rotar() {
 rotar();
 
 function seccion() {
-    let elemento = document.getElementById('habilidades');
-    elemento.addEventListener('click', () => {
-        let app = document.getElementById('title_Habilidades');
-        app.scrollIntoView({ behavior: 'smooth' });
+    let elemento = document.querySelectorAll('#habilidades');
+    let home = document.querySelectorAll('.nut2');
 
+    home.forEach(elemt => {
+        elemt.addEventListener('click', () => {
+           let principal = document.getElementById('principal');
+           principal.scrollIntoView({behavior: 'smooth'});
+        });
+    });
+
+    elemento.forEach(eleme => {
+        eleme.addEventListener('click', () => {
+            let app = document.getElementById('title_Habilidades');
+            app.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    let about = document.getElementById('sobre_mi');
+    about.addEventListener('click', () => {
+        let spaceaboutMe = document.querySelector('.aboutMe');
+        spaceaboutMe.scrollIntoView({ behavior: 'smooth' });
     });
 }
 seccion();

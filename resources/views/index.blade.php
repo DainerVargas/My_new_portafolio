@@ -10,7 +10,7 @@
 <body id="body">
     @vite('resources/sass/app.scss')
 <div id="hidden">
-    <header class="principal">
+    <header class="principal" id="principal">
        <a href="DainerWs"><img id="logo" class="principal__imagen" src="/images/logo-blue.png" alt=""></a>
         <nav class="links" >
             <div class="divierte">
@@ -68,7 +68,10 @@
         <mi-componente />
     </div>
 
-    <audio id="audio" src="/music/AudioPagina.mpeg"></audio>
+    <div id="about">
+        <about-me />
+    </div>
+    
     <div id="habilidades_all">
         <div id="conte_herramientas">
             <div class="title_Habilidades" id="title_Habilidades">
@@ -167,6 +170,8 @@
         </div>
     </div>
     </div>
+
+   
 </div>
 @vite('resources/js/app.js')
 @vite('resources/js/main.js')
