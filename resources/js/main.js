@@ -44,6 +44,7 @@ function modoClaro() {
     const rotate = document.querySelectorAll("#rotate");
     const borderText = document.querySelector(".textoAbout");
     const borderFoto = document.querySelector(".borderFoto");
+    const aboutMe = document.querySelector(".aboutMe");
     let modo = 0;
     let num = 0;
 
@@ -67,6 +68,7 @@ function modoClaro() {
     function mododark() {
         const newestado = localStorage.getItem("cambio");
         if (newestado == 1) {
+            aboutMe.style.background = "linear-gradient(#001a5b, #010924)";
             ocultar.style.background = "linear-gradient(#012c98, #010924)";
             modoclaro.src = "/images/soleado-white.png";
             cambio_gafas.src = "/images/jovenPrincipal.png";
@@ -76,7 +78,7 @@ function modoClaro() {
             space2.style.background = "linear-gradient(#000e33,#000e36)";
             space3.style.background = "linear-gradient(#000e33,#000e36)";
             component.style.background = "linear-gradient(#010926,#001a5b)";
-            conte_herramientas.style.background = "linear-gradient(#001a5b,#010926)";
+            conte_herramientas.style.background = "linear-gradient(#010926,#001a5b)";
             borderText.style.border = "0.1vw solid white";
             borderFoto.style.border = "0.7vw solid gray";
             links.forEach(element => {
@@ -108,6 +110,7 @@ function modoClaro() {
             title_idioma.style.color = "white";
 
         } else {
+            aboutMe.style.background = "#fff";
             conte_herramientas.style.background = "linear-gradient(#fff,#fff)";
             title_idioma.style.color = "#010926";
             ocultar.style.background = "linear-gradient(#ffffffe2, #ffffffd0)";

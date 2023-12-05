@@ -285,60 +285,27 @@ body {
     #absoluteAbout{
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         position: absolute;
-        height: 24vw;
-        width: 24vw;
-        top: -8vw;
-        left: 1vw;
+        height: 28vw;
+        width: 28vw;
+        top: -10vw;
+        left: -4vw;
+        transform: rotate(75deg);
         background: linear-gradient(#b1c3ee ,  #6f91e8);
-        transform: rotate(65deg);
-    }
-    .triangle{
-        position: absolute;
-        height: 72vw;
-        width: 100vw;
-        top: 4vw;
-        left:8vw;
-        transform: translateZ(50%);
-        margin-bottom: 14vw;
     }
     .absoluteAbout2{
-        position: absolute;
-        height: 15vw;
-        width: 15vw;
-        top: 4vw;
-        left: 15vw;
-        transform: translate(-50%,-50%);
-        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-        position: relative;
-        background: linear-gradient(#b1c3ee ,  #6f91e8);
-        transform: perspective(500px) translateZ(-200px);
-    }
-    .absoluteAbout3{
-        position: absolute;
-        height: 10vw;
-        width: 10vw;
-        top: 16vw;
-        left: 4vw;
-        transform: translate(-50%,-50%);
-        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-        position: relative;
-        background: linear-gradient(#b1c3ee ,  #273b6d);
-    }
-   /*  .absoluteAbout4{
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         position: absolute;
         height: 28vw;
         width: 28vw;
-        top: -1vw;
-        left: 71vw;
-        transform: rotate(70deg);
-        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-        position: relative;
         background: linear-gradient(#b1c3ee ,  #6f91e8);
-        z-index: 0;
-    } */
+        top: 20vw;
+        right: -14vw;
+        transform: rotate(5deg);
+       
+    }
     .nuts{
         position: absolute;
-        top: 11vw;
+        top: 7vw;
         right: 4vw;
         height: 20vw;
         width: 20vw;

@@ -94,7 +94,6 @@ const texto = "¡Hola!, Soy Dainer Vargas J.";
   width: 0;
   animation: title 5s steps(28) alternate;
   background-color: white;
- /*  background-color: #010b2b; */
 }
 @keyframes title {
   from {
@@ -128,7 +127,6 @@ const texto = "¡Hola!, Soy Dainer Vargas J.";
   height: 7vw;
   width: 11vw;
   background: linear-gradient(#b1c3ee ,  #6f91e8);
-  /* background-color: #001043; */
   border-radius:50%;
   border: none;
   position: absolute;
@@ -140,7 +138,6 @@ const texto = "¡Hola!, Soy Dainer Vargas J.";
   height: 30vw;
   width: 30vw;
   background: linear-gradient(#b1c3ee ,  #6f91e8);
- /*  background: linear-gradient(#010b2c ,  #002582); */
   border-radius:50%;
   border: none;
   position: absolute;

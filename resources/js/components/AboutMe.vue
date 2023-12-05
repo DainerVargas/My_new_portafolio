@@ -7,11 +7,7 @@
             <p class="efecto-habilidades">{{ texto }}</p>
         </div>
         <div id="absoluteAbout"></div>
-        <!-- <div class="triangle">
-            <div class="absoluteAbout2"></div>
-            <div class="absoluteAbout3"></div>
-            <div class="absoluteAbout4"></div>
-        </div> -->
+        <div class="absoluteAbout2"></div>
         <div class="nuts">
             <div class="nut1"> </div>
             <div class="nut2">
