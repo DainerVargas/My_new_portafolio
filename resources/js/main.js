@@ -45,14 +45,14 @@ function modoClaro() {
     const borderText = document.querySelector(".textoAbout");
     const borderFoto = document.querySelector(".borderFoto");
     const aboutMe = document.querySelector(".aboutMe");
+    const projects = document.querySelector(".projects");
+    const title = document.querySelector(".title"); 
     let modo = 0;
     let num = 0;
-
 
     window.addEventListener("DOMContentLoaded", () => {
         mododark();
     });
-
 
     modoclaro.addEventListener("click", () => {
         modo++;
@@ -79,8 +79,11 @@ function modoClaro() {
             space3.style.background = "linear-gradient(#000e33,#000e36)";
             component.style.background = "linear-gradient(#010926,#001a5b)";
             conte_herramientas.style.background = "linear-gradient(#010926,#001a5b)";
-            borderText.style.border = "0.1vw solid white";
-            borderFoto.style.border = "0.7vw solid gray";
+            projects.style.background = "linear-gradient(#001a5b,#010926)";
+            borderText.style.border = "0.4vw solid #b1c3ee";
+            borderFoto.style.border = "0.7vw solid #b1c3ee";
+            borderFoto.style.borderBottom = " 0.7vw solid transparent";
+            borderFoto.style.borderTop = " 0.7vw solid transparent";
             links.forEach(element => {
                 element.style.color = "white";
             });
@@ -104,6 +107,7 @@ function modoClaro() {
                 cambio_gafas.src = "/images/jovenPrincipal.png";
             });
             titleHabilidad.style.color = "white";
+            title.style.color = "white";
             menu.style.color = "white";
             Mynombre.style.color = "white";
             flecha.style.color = "white";
@@ -114,7 +118,7 @@ function modoClaro() {
             conte_herramientas.style.background = "linear-gradient(#fff,#fff)";
             title_idioma.style.color = "#010926";
             ocultar.style.background = "linear-gradient(#ffffffe2, #ffffffd0)";
-            component.style.background = "";
+            component.style.background = "white";
             habilidades.forEach(elemen => {
                 elemen.style.color = "#010926";
             });
@@ -125,6 +129,7 @@ function modoClaro() {
             space.style.background = "linear-gradient(#fff,#fff)";
             space2.style.background = "linear-gradient(#fff,#fff)";
             space3.style.background = "linear-gradient(#fff,#fff)";
+            projects.style.background = "linear-gradient(#fff,#fff)";
             Mynombre.style.color = "#010926";
             modoclaro.src = "/images/soleado.png";
             cambio_gafas.src = "/images/jovenPrincipal-gafas.png";
@@ -146,9 +151,12 @@ function modoClaro() {
             });
             titleHabilidad.style.color = "#010926";
             menu.style.color = "#010926";
+            title.style.color = "#2d3a69";
             flecha.style.color = "#010926";
-            borderText.style.border = "0.1vw solid #010926";
-            borderFoto.style.border = " 0.7vw solid #000e41";
+            borderText.style.border = "0.4vw solid #6f91e8";
+            borderFoto.style.border = " 0.7vw solid #6f91e8";
+            borderFoto.style.borderBottom = " 0.7vw solid transparent";
+            borderFoto.style.borderTop = " 0.7vw solid transparent";
         }
     }
     menu.addEventListener("click", () => {
@@ -195,8 +203,8 @@ function seccion() {
 
     home.forEach(elemt => {
         elemt.addEventListener('click', () => {
-           let principal = document.getElementById('principal');
-           principal.scrollIntoView({behavior: 'smooth'});
+            let principal = document.getElementById('principal');
+            principal.scrollIntoView({ behavior: 'smooth' });
         });
     });
 
@@ -211,6 +219,18 @@ function seccion() {
     about.addEventListener('click', () => {
         let spaceaboutMe = document.querySelector('.aboutMe');
         spaceaboutMe.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    let proyectos = document.getElementById('proyectos');
+    proyectos.addEventListener('click', () => {
+        const tittle = document.querySelector('.tittle');
+        tittle.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    let back = document.querySelector('.back');
+    back.addEventListener('click', () => {
+        let app = document.getElementById('title_Habilidades');
+        app.scrollIntoView({ behavior: 'smooth' });
     });
 }
 seccion();
