@@ -177,10 +177,10 @@
                     </div>
                     <div class="card">
                         <div id="rotate" class="text-container">
-                            <img id="vue" src="/images/vue.png" alt="vue-logo">
+                            <img id="vue" src="/images/livewire.png" alt="livewire-logo">
                             <div class="textoOcultar">
-                                <p id="color">Vue.js es un framework de JavaScript de código abierto para la
-                                    construcción de interfaces de usuario y aplicaciones de una sola página.​</p>
+                                <p id="color">Livewire es un marco completo para Laravel que simplifica la creación
+                                    de interfaces dinámicas, sin abandonar la comodidad de Laravel.​</p>
                             </div>
                         </div>
                     </div>
@@ -203,25 +203,26 @@
                 </div>
             </div>
             <div class="projects__grid" id="projects__grid">
-            <?php 
-            $titulos = ['Reproductor de Musica','Introducción con naveg ación desplegable','Proyecto citas'];
-            $images = ['/images/Reproductor musica.png','/images/desktop-preview.jpg','/images/Proyecto-Citas.png'];
-
-            ?>
-            @for ( $i = 0; $i < 3; $i++ )
-            <div class="container">
-                <div class="container__title">
-                    <h2 class="size">{{ $titulos[$i] }}</h2>
-                </div>
-                <div class="container__image">
-                    <img class="image" id="project_img" src="{{$images[$i]}}" alt="img">
-                    <p></p> 
-                    <span class="material-symbols-outlined abrir"> open_in_new </span>
-                </div>
-                <div class="container__description">
-                        <p class="texto">loreto de music de music de music loreto de music de music de music loreto de music de music de music loreto de music de music de music</p>
+                <?php
+                $titulos = ['Reproductor de Musica', 'Introducción con navegación desplegable', 'Proyecto citas'];
+                $images = ['/images/Reproductor musica.png', '/images/desktop-preview.jpg', '/images/Proyecto-Citas.png'];
+                
+                ?>
+                @for ($i = 0; $i < count($titulos); $i++)
+                    <div class="container">
+                        <div class="container__title">
+                            <h2 class="size">{{ $titulos[$i] }}</h2>
+                        </div>
+                        <div class="container__image">
+                            <img class="image" id="project_img" src="{{ $images[$i] }}" alt="img">
+                            <p></p>
+                            <span class="material-symbols-outlined abrir"> open_in_new </span>
+                        </div>
+                        <div class="container__description">
+                            <p class="texto">loreto de music de music de music loreto de music de music de music
+                                loreto de music de music de music loreto de music de music de music</p>
+                        </div>
                     </div>
-                </div>
                 @endfor
             </div>
         </div>
