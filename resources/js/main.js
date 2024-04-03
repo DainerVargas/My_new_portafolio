@@ -23,6 +23,7 @@ setTimeout(() => {
 function modoClaro() {
 
     const modoclaro = document.getElementById("modoclaro");
+    const conteheader = document.getElementById("principal");
     const logo = document.getElementById("logo");
     const logomenu = document.getElementById("logomenu");
     const links = document.querySelectorAll(".links strong");
@@ -42,13 +43,14 @@ function modoClaro() {
     const component = document.getElementById("component");
     const flecha = document.getElementById("flecha");
     const rotate = document.querySelectorAll("#rotate");
-    const borderText = document.querySelector(".textoAbout");
-    const borderFoto = document.querySelector(".borderFoto");
     const aboutMe = document.querySelector(".aboutMe");
     const projects = document.querySelector(".projects");
     const title = document.querySelector(".title"); 
+    const colores = document.querySelectorAll(".colorw"); 
     let modo = 0;
     let num = 0;
+
+    console.log(conteheader);
 
     window.addEventListener("DOMContentLoaded", () => {
         mododark();
@@ -69,6 +71,7 @@ function modoClaro() {
         const newestado = localStorage.getItem("cambio");
         if (newestado == 1) {
             aboutMe.style.background = "linear-gradient(#001a5b, #010924)";
+            conteheader.style.background = "#010924";
             ocultar.style.background = "linear-gradient(#012c98, #010924)";
             modoclaro.src = "/images/soleado-white.png";
             cambio_gafas.src = "/images/jovenPrincipal.png";
@@ -80,11 +83,11 @@ function modoClaro() {
             component.style.background = "linear-gradient(#010926,#001a5b)";
             conte_herramientas.style.background = "linear-gradient(#010926,#001a5b)";
             projects.style.background = "linear-gradient(#001a5b,#010926)";
-            borderText.style.border = "0.4vw solid #b1c3ee";
-            borderFoto.style.border = "0.7vw solid #b1c3ee";
-            borderFoto.style.borderBottom = " 0.7vw solid transparent";
-            borderFoto.style.borderTop = " 0.7vw solid transparent";
+           
             links.forEach(element => {
+                element.style.color = "white";
+            });
+            colores.forEach(element => {
                 element.style.color = "white";
             });
             logros.forEach(elemen => {
@@ -115,6 +118,7 @@ function modoClaro() {
 
         } else {
             aboutMe.style.background = "#fff";
+            conteheader.style.background = "#fff";
             conte_herramientas.style.background = "linear-gradient(#fff,#fff)";
             title_idioma.style.color = "#010926";
             ocultar.style.background = "linear-gradient(#ffffffe2, #ffffffd0)";
@@ -142,6 +146,9 @@ function modoClaro() {
             logros.forEach(eleme => {
                 eleme.style.color = "#010926";
             });
+            colores.forEach(element => {
+                element.style.color = "#010926";
+            });
             cambio_gafas.addEventListener("mouseover", () => {
 
                 cambio_gafas.src = "/images/jovenPrincipal.png";
@@ -153,10 +160,7 @@ function modoClaro() {
             menu.style.color = "#010926";
             title.style.color = "#2d3a69";
             flecha.style.color = "#010926";
-            borderText.style.border = "0.4vw solid #6f91e8";
-            borderFoto.style.border = " 0.7vw solid #6f91e8";
-            borderFoto.style.borderBottom = " 0.7vw solid transparent";
-            borderFoto.style.borderTop = " 0.7vw solid transparent";
+           
         }
     }
     menu.addEventListener("click", () => {
@@ -199,18 +203,18 @@ rotar();
 
 function seccion() {
     let elemento = document.querySelectorAll('#habilidades');
-    let home = document.querySelectorAll('.nut2');
+    let home = document.querySelectorAll('#diviertete');
 
     home.forEach(elemt => {
         elemt.addEventListener('click', () => {
-            let principal = document.getElementById('principal');
+            let principal = document.querySelector('.conteheader');
             principal.scrollIntoView({ behavior: 'smooth' });
         });
     });
 
     elemento.forEach(eleme => {
         eleme.addEventListener('click', () => {
-            let app = document.getElementById('title_Habilidades');
+            let app = document.getElementById('habilidades_all');
             app.scrollIntoView({ behavior: 'smooth' });
         });
     });

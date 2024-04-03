@@ -7,73 +7,80 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>DainerWS</title>
+    <title>{{ $title ?? 'DainerWS' }}</title>
+
+    @livewireStyles
 </head>
 
 <body id="body">
     @vite('resources/sass/app.scss')
     <div id="hidden">
-        <header class="principal" id="principal">
-            <a href="DainerWs"><img id="logo" class="principal__imagen" src="/images/logo-blue.png"
-                    alt=""></a>
-            <nav class="links">
-                <div class="divierte">
-                    <strong id="diviertete">Home</strong>
-                </div>
-                <div class="sobre">
-                    <strong id="sobre_mi">Sobre mi</strong>
-                </div>
-                <div class="habilidad">
-                    <strong id="habilidades">Habilidades</strong>
-                </div>
-                <div class="proyec">
-                    <strong id="proyectos">Proyectos</strong>
-                </div>
-            </nav>
-
-            <div class="menu">
-                <img id="modoclaro" class="modo__img" src="/images/soleado.png" alt="">
-                <span id="menu" class="material-symbols-outlined">sort</span>
-            </div>
-            <div id="ocultar">
-                <div class="info_menu">
-                    <div class="logo_menu">
-                        <img id="logomenu" class="principal__imagen" src="/images/logo-blue.png" alt="">
+        <div class="conteheader">
+            <header class="principal" id="principal">
+                <a href="DainerWs"><img id="logo" class="principal__imagen" src="/images/logo-blue.png"
+                        alt=""></a>
+                <nav class="links">
+                    <div class="divierte">
+                        <strong id="diviertete">Home</strong>
                     </div>
-
-                    <div class="idioma">
-                        <p id="title_idioma">Selecciona tu idioma</p>
-                        <div class="banderas">
-                            <img id="espana" class="selected" src="/images/espana.png" alt="">
-                            <img id="eeuu" src="/images/estados-unidos.png" alt="">
-                        </div>
+                    <div class="sobre">
+                        <strong id="sobre_mi">About me</strong>
                     </div>
-                    <div class="absolutemenu"></div>
-                    <div class="absolutemenu2"></div>
-                    <div class="contacto">
-                        <div class="linkedin contacto__red">
-                            <img src="/images/linkedin.png" alt="">
-                            <a href="https://www.linkedin.com/in/dainerws/" target="_blank">DainerWs</a>
+                    <div class="habilidad">
+                        <strong id="habilidades">Skills</strong>
+                    </div>
+                    <div class="proyec">
+                        <strong id="proyectos">Projects</strong>
+                    </div>
+                </nav>
+
+                <div class="menu">
+                    <img id="modoclaro" class="modo__img" src="/images/soleado.png" alt="">
+                    <span id="menu" class="material-symbols-outlined">sort</span>
+                </div>
+                <div id="ocultar">
+                    <div class="info_menu">
+                        <div class="logo_menu">
+                            <img id="logomenu" class="principal__imagen" src="/images/logo-blue.png" alt="">
                         </div>
-                        <div class="github contacto__red">
-                            <img src="/images/github-white.png" alt="">
-                            <a href="https://github.com/DainerVargas" target="_blank">DainerVargas</a>
+
+                        <div class="idioma">
+                            <p id="title_idioma">Selecciona tu idioma</p>
+                            <div class="banderas">
+                                <img id="espana" class="selected" src="/images/espana.png" alt="">
+                                <img id="eeuu" src="/images/estados-unidos.png" alt="">
+                            </div>
                         </div>
-                        <div class="whatsApp contacto__red">
-                            <img src="/images/Whatsapp.png" alt="">
-                            <a href="https://wa.me/3242406307" target="_blank">Contáctame</a>
+                        <div class="absolutemenu"></div>
+                        <div class="absolutemenu2"></div>
+                        <div class="contacto">
+                            <div class="linkedin contacto__red">
+                                <img src="/images/linkedin.png" alt="">
+                                <a href="https://www.linkedin.com/in/dainerws/" target="_blank">DainerWs</a>
+                            </div>
+                            <div class="github contacto__red">
+                                <img src="/images/github-white.png" alt="">
+                                <a href="https://github.com/DainerVargas" target="_blank">DainerVargas</a>
+                            </div>
+                            <div class="whatsApp contacto__red">
+                                <img src="/images/Whatsapp.png" alt="">
+                                <a href="https://wa.me/3242406307" target="_blank">Contáctame</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
-
+            </header>
+        </div>
+        
         <div id="app">
             <mi-componente />
         </div>
 
-        <div id="about">
-            <about-me />
+        <div class="aboutMe">
+            <div class="title_About">
+                <h2 class="titleAbout colorw">SOBRE MI</h2>
+            </div>
+            <livewire:navegation />
         </div>
 
         <div id="habilidades_all">
@@ -193,14 +200,6 @@
                 <div class="tittle__title">
                     <h1 class="title">Mis Proyectos</h1>
                 </div>
-                <div class="tittle__flechas">
-                    <div class="back div">
-                        <span class="material-symbols-outlined top">keyboard_control_key</span>
-                    </div>
-                    <div class="next div">
-                        <span class="material-symbols-outlined bottom">expand_more</span>
-                    </div>
-                </div>
             </div>
             <div class="projects__grid" id="projects__grid">
                 <?php
@@ -228,11 +227,11 @@
         </div>
 
     </div>
-
+    @livewireScripts
     @vite('resources/js/app.js')
     @vite('resources/js/main.js')
+    @vite('resources/js/script.js')
     {{-- @vite('resources/js/projects.js') --}}
-
 </body>
 
 </html>

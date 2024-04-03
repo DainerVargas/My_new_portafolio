@@ -1,22 +1,35 @@
 @use 'variables';
 @use 'funciones';
 
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     background-color: #ffffffba;
     transition: all 0.7s ease;
     margin-top: 0;
 }
 
+.conteheader {
+    width: 100%;
+    height: 6.3vw;
+    background-color: white;
+}
+
 .principal {
     @include variables.flex(space-between);
-    height: 10vw;
+    width: 100%;
     padding: 0 4vw;
+    background-color: white;
+    box-sizing: border-box;
     position: relative;
+    position: fixed;
     z-index: 999;
 
     &__imagen {
-        height: 8vw;
-        width: 10vw;
+        height: 6vw;
+        width: 8vw;
         z-index: 99;
     }
 
@@ -41,7 +54,7 @@ body {
     }
 
     .links div strong:hover {
-        font-size: 1.7vw;
+        transform: scale(1.1) !important;
     }
 
     .modo {
@@ -101,6 +114,7 @@ body {
 
 .info_menu {
     padding: 0 1vw;
+    box-sizing: border-box;
     @include funciones.flex(space-between);
     flex-direction: column;
     height: 100%;
@@ -113,7 +127,7 @@ body {
         border-radius: 50%;
         border: none;
         position: absolute;
-        top: 26vw;
+        top: 28vw;
         left: -2.3vw;
         z-index: 0;
     }
@@ -159,7 +173,7 @@ body {
 }
 
 #ocultar {
-    height: 35.9vw;
+    height: 38vw;
     width: 20vw;
     border: 0.1vw solid #010926;
     position: absolute;
@@ -185,6 +199,7 @@ body {
     margin-top: 2vw;
     position: relative;
     overflow: hidden;
+    z-index: 9;
 
     &__imagen {
         height: 30vw;
@@ -247,128 +262,92 @@ body {
 /* ABOUT ME */
 
 .aboutMe {
-    @include funciones.align(space-between, center);
+    @include funciones.flex(center);
     flex-direction: column;
-    margin-top: 4vw;
-    height: 46.8vw;
-    position: relative;
-    overflow: hidden;
-    margin: 0;
+    height: 50vw;
 
-    .foto {
-        height: 24vw;
-        width: 24vw;
-        border: 0.7vw solid #000e41;
-        border-bottom: 0.7vs solid transparent;
-        border-radius: 50%;
-        @include funciones.align(center, end);
-        z-index: 10;
-        overflow: hidden;
+    .titleAbout{
+        font-size: 4.2vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        &__img {
-            height: 23vw;
-            width: 17vw;
-            margin-bottom: -0.4vw;
-            z-index: 1;
+    .infoAbout {
+        @include variables.flex(center);
+        width: 100%;
+        border: 0.1vw solid #a1a1a1;
+        border-bottom: none;
+        margin-top: 2vw;
+        height: 39vw;
+
+        .menu {
+            border: 0.1vw solid white;
+            width: 15%;
+            height: 100%;
+            border: none;
+            border-right: 0.1vw solid #454545;
+
+            .links {
+                @include funciones.align(center, center);
+                flex-direction: column;
+                row-gap: 1vw;
+                margin-top: 2vw;
+
+                a {
+                    font-size: 1.4vw;
+                    cursor: pointer;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: #010926;
+                    transition: all 0.2s ease;
+                }
+
+                .active {
+                    font-weight: bold;
+                }
+            }
         }
-    }
 
-    .textoAbout {
-        width: 60%;
-        height: 14vw;
-        margin-bottom: 2vw;
-        border: 0.1vw solid #6f91e8;
-        padding: 0vw 0.5vw;
-        box-sizing: border-box;
-        border-radius: 0.4vw;
-        z-index: 99;
-    }
+        .infoMe {
+            width: 85%;
+            height: 100%;
+            padding: 1vw;
+            box-sizing: border-box;
+            @include variables.flex(start);
+            flex-direction: column;
+            position: relative;
 
-    .textoAbout p {
-        text-align: justify;
-        font-size: 1.7vw;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
-    }
+            .conteText {
+                @include funciones.align(center, start);
+                flex-direction: column;
+                height: auto;
+                width: 80%;
+                z-index: 99;
 
-    #absoluteAbout {
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        position: absolute;
-        height: 28vw;
-        width: 28vw;
-        top: -10vw;
-        left: -4vw;
-        transform: rotate(75deg);
-        background: linear-gradient(#b1c3ee, #6f91e8);
-    }
+                p {
+                    text-align: justify;
+                    font-size: 1.6vw;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
 
-    .absoluteAbout2 {
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        position: absolute;
-        height: 28vw;
-        width: 28vw;
-        background: linear-gradient(#b1c3ee, #6f91e8);
-        top: 20vw;
-        right: -14vw;
-        transform: rotate(5deg);
+                .conteTitle {
+                    p {
+                        font-size: 2vw;
+                        font-weight: bold;
+                    }
+                }
+            }
 
-    }
+            #fireworks-container {
+                width: 100%;
+                height: 97%;
+                position: absolute;
+                background-color: transparent;
 
-    .nuts {
-        position: absolute;
-        top: 7vw;
-        right: 4vw;
-        height: 20vw;
-        width: 20vw;
-    }
-
-    .nuts div {
-        position: absolute;
-        height: 5vw;
-        width: 5vw;
-        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-        background: linear-gradient(#b1c3ee, #6f91e8);
-        @include funciones.flex(center);
-        user-select: none;
-        transform: translate(-50%, -50%);
-
-    }
-
-    .mando {
-        color: #000e41;
-        background-color: transparent;
-        font-size: 4vw;
-        font-weight: bold;
-        margin-top: 0.5vw;
-    }
-
-    .nut2 {
-        top: 23%;
-        left: 49%;
-        cursor: pointer;
-    }
-
-    .nut2:hover {
-        opacity: 0.7;
-    }
-
-    .nut1 {
-        top: 40%;
-        left: 30%;
-    }
-
-    .nut3 {
-        top: 57%;
-        left: 49%;
-        cursor: pointer;
-    }
-
-    .nut3:hover {
-        opacity: 0.7;
-    }
-
-    .nut4 {
-        top: 40%;
-        left: 68%;
+                #fireworks {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
 
 }
@@ -391,7 +370,7 @@ body {
     margin-top: 2vw;
 }
 
-.title_Habilidades {
+.title_Habilidades, .title_About {
     @include funciones.flex(center);
     font-size: 3VW;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -503,7 +482,7 @@ body {
 
         &__title {
             border: 0.1vw solid #0c315c;
-            border-radius:0.5vw ;
+            border-radius: 0.5vw;
             width: 50vw;
             color: #2d3a69;
             height: 6vw;
@@ -512,39 +491,6 @@ body {
             .title {
                 font-size: 5vw;
                 font-family: 'Courier New', Courier, monospace;
-            }
-        }
-
-        &__flechas {
-            height: 12vw;
-            width: 13vw;
-            position: relative;
-            padding: 0.5vw;
-
-            .div {
-                height: 6vw;
-                width: 6vw;
-                @include funciones.flex(center);
-                clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-                background: radial-gradient(#eceff4, #c1cdea);
-                cursor: pointer;
-
-                .top,.bottom {
-                    font-size: 4vw;
-                    font-weight: bold;
-                }
-                .top{
-                    margin-top: -0.2vw;
-                }
-                .bottom{
-                    margin-top: 0.7vw;
-                }
-            }
-
-            .next {
-                position: absolute;
-                right: 0.5vw;
-                top: 4vw;
             }
         }
     }
@@ -585,7 +531,8 @@ body {
                     border-radius: 0.5vw;
                     z-index: 999;
                 }
-                .abrir{
+
+                .abrir {
                     position: absolute;
                     right: -0.4vw;
                     cursor: pointer;
