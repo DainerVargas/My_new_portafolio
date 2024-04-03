@@ -50,8 +50,6 @@ function modoClaro() {
     let modo = 0;
     let num = 0;
 
-    console.log(conteheader);
-
     window.addEventListener("DOMContentLoaded", () => {
         mododark();
     });
@@ -229,12 +227,6 @@ function seccion() {
     proyectos.addEventListener('click', () => {
         const tittle = document.querySelector('.tittle');
         tittle.scrollIntoView({ behavior: 'smooth' });
-    });
-
-    let back = document.querySelector('.back');
-    back.addEventListener('click', () => {
-        let app = document.getElementById('title_Habilidades');
-        app.scrollIntoView({ behavior: 'smooth' });
     });
 }
 seccion();
