@@ -71,7 +71,7 @@
                 </div>
             </header>
         </div>
-        
+
         <div id="app">
             <mi-componente />
         </div>
@@ -202,27 +202,7 @@
                 </div>
             </div>
             <div class="projects__grid" id="projects__grid">
-                <?php
-                $titulos = ['Reproductor de Musica', 'Introducción con navegación desplegable', 'Proyecto citas'];
-                $images = ['/images/Reproductor musica.png', '/images/desktop-preview.jpg', '/images/Proyecto-Citas.png'];
-                
-                ?>
-                @for ($i = 0; $i < count($titulos); $i++)
-                    <div class="container">
-                        <div class="container__title">
-                            <h2 class="size">{{ $titulos[$i] }}</h2>
-                        </div>
-                        <div class="container__image">
-                            <img class="image" id="project_img" src="{{ $images[$i] }}" alt="img">
-                            <p></p>
-                            <span class="material-symbols-outlined abrir"> open_in_new </span>
-                        </div>
-                        <div class="container__description">
-                            <p class="texto">loreto de music de music de music loreto de music de music de music
-                                loreto de music de music de music loreto de music de music de music</p>
-                        </div>
-                    </div>
-                @endfor
+                @livewire('image')
             </div>
         </div>
 
