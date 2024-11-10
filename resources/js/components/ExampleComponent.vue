@@ -21,17 +21,17 @@
 
       <div class="logro1">
         <img class="medalla" src="/images/insignia.png" alt="medalla">
-        <p>Fui campeón regional de la Guajira</p>
+        <p>Fui campeón regional de la Guajira.</p>
       </div>
 
       <div class="logro2">
         <img class="medalla" src="/images/insignia.png" alt="medalla">
-        <p>Me posicioné en el primer lugar de todas las regionales de Colombia</p>
+        <p>Me posicioné en el primer lugar de todas las regionales de Colombia.</p>
       </div>
 
       <div class="logro3">
         <img class="medalla" src="/images/insignia.png" alt="medalla">
-        <p>Reprepesente a la Guajira en Cúcuta</p>
+        <p>Represente a la Guajira en Cúcuta.</p>
       </div>
     </div>
     <a

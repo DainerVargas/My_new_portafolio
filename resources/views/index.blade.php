@@ -8,12 +8,11 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>{{ $title ?? 'DainerWS' }}</title>
-
     @livewireStyles
+    @vite('resources/sass/app.scss')
 </head>
 
 <body id="body">
-    @vite('resources/sass/app.scss')
     <div id="hidden">
         <div class="conteheader">
             <header class="principal" id="principal">
@@ -24,13 +23,13 @@
                         <strong id="diviertete">Home</strong>
                     </div>
                     <div class="sobre">
-                        <strong id="sobre_mi">About me</strong>
+                        <strong id="sobre_mi">Sobre mí</strong>
                     </div>
                     <div class="habilidad">
-                        <strong id="habilidades">Skills</strong>
+                        <strong id="habilidades">Habilidades</strong>
                     </div>
                     <div class="proyec">
-                        <strong id="proyectos">Projects</strong>
+                        <strong id="proyectos">Proyectos</strong>
                     </div>
                 </nav>
 
@@ -53,6 +52,7 @@
                         </div>
                         <div class="absolutemenu"></div>
                         <div class="absolutemenu2"></div>
+
                         <div class="contacto">
                             <div class="linkedin contacto__red">
                                 <img src="/images/linkedin.png" alt="">
@@ -201,9 +201,14 @@
                     <h1 class="title">Mis Proyectos</h1>
                 </div>
             </div>
+
             <div class="projects__grid" id="projects__grid">
                 @livewire('image')
             </div>
+        </div>
+
+        <div class="contacto">
+            @livewire('contacto')
         </div>
 
     </div>
